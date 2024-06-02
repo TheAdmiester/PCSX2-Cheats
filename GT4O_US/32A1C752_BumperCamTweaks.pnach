@@ -1,8 +1,12 @@
 gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
-[Disable Bumper Cam Pitching]
-comment=Removes the exaggerated pitching effect when accelerating or braking in bumper cam
+[Disable Bumper Cam Pitching/Crash Effect]
+comment=Removes pitching and blurry shaking crash effect from bumper cam
 author=TheAdmiester
 
 // Overwrite the first instruction of Automobile::DriverCameraExtension::UpdatePitchLPF with an early return
 // NOPing the call to this function may have the same effect but it's used as a return value so this seemed safer
 patch=1,EE,2020B594,extended,03E00008
+
+// Change the check in Automobile::DriverCameraExtension::Crash to always false
+// Replaces bnel v0,zero,0x0020B760 with bne zero,zero,0x0020B760
+patch=1,EE,2020B744,extended,14000006
