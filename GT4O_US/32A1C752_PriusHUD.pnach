@@ -4,4 +4,5 @@ comment=Forces the game to load the Toyota Prius speed/fuel economy HUD without 
 author=TheAdmiester
 
 // Change bne,v0,zero,0x001C7790 to beq,v0,0x001C7790
+// This is only checked when transitioning from pre-race to race, so activate it before starting
 patch=1,EE,201C777C,extended,14400004
