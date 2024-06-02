@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
+[Enable Toyota Pod squatting]
+comment=Enables Toyota Pod functionality for all cars
+author=TheAdmiester
+
+// Set a lui v0,0x1 to always return true in isToyotaPod
+// Enables squatting when stationary on handbrake press, may have more effects
+patch=1,EE,2021F6A8,extended,3C020001
