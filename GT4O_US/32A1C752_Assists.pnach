@@ -1,0 +1,12 @@
+gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
+[Disable Licence/Mission Assists]
+comment=Disable ASM and TCS in licences and mission races.
+author=TheAdmiester
+
+// QUICK_MENU::ApplyLicenseRaceOption
+patch=1,EE,1010C1FC,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistAsm
+patch=1,EE,1010C20C,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistTcs
+
+// QUICK_MENU::ApplyMissionRaceOption
+patch=1,EE,1010C254,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistAsm
+patch=1,EE,1010C264,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistTcs
