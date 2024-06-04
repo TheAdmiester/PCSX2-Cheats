@@ -6,3 +6,10 @@ author=TheAdmiester
 // Change bne,v0,zero,0x001C7790 to beq,v0,0x001C7790
 // This is only checked when transitioning from pre-race to race, so activate it before starting
 patch=1,EE,201C777C,extended,14400004
+
+// Unsure of what this is checking, but stopping it from branching selects average MPG for display instead of live
+// Change beq v1,zero,0x0022C880 to bne zero,zero,0x0022C880
+patch=1,EE,2022C870,extended,14000004
+
+// Uncomment this to switch back to live - checked constantly during the race so no restart needed
+//patch=1,EE,2022C870,extended,10600003
