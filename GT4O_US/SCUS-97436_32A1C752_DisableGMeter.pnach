@@ -3,6 +3,6 @@ gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
 comment=Hides the G-meter from all views
 author=TheAdmiester
 
-// RaceDisplay::render_panel, bool is set to false just before checking this function - if skipped then it will never render it
+// RaceDisplay::render_panel, bool is set to false just before checking this function - if skipped then it will never set to true to render
 // Change beq v0,zero,0x001C5DE4 to bne v0,zero,0x001C5DE4
 patch=1,EE,201C5DD0,extended,14400004
