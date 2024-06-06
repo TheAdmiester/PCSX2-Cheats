@@ -3,9 +3,9 @@ gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
 comment=Forces the game to load the Toyota Prius speed/fuel economy HUD without the hybrid display
 author=TheAdmiester
 
-// Change beq,v0,zero,0x001C7790 to bne,v0,zero,0x001C7790
-// This is only checked when transitioning from pre-race to race, so activate it before starting
-patch=1,EE,201C777C,extended,14400004
+// Change beq,v0,zero,0x001C7790 to bne,zero,zero,0x001C7790
+// This checked pre-race or when the camera is changed
+patch=1,EE,201C777C,extended,14000004
 
 // Unsure of what this is checking, but stopping it from branching selects average MPG for display instead of live
 // Change beq v1,zero,0x0022C880 to bne zero,zero,0x0022C880
