@@ -3,6 +3,6 @@ gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
 comment=Disables the lens flare that appears on some tracks when facing the sun. Useful for PCSX2 performance.
 author=TheAdmiester
 
-// Return early from CourseEnvPtr::setSun
-patch=1,EE,2029E758,extended,03E00008
-patch=1,EE,2029E75C,extended,00000000
+// Skip condition inside CourseEnvPtr::setSun
+// Change beq v0,zero,0x00398638 to beq zero,zero,0x00398638 so it's always skipped
+patch=1,EE,203985C0,extended,1000001D

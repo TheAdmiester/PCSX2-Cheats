@@ -1,6 +1,6 @@
 gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
-[Disable wind noise]
-comment=Enables Toyota Pod functionality for all cars
+[Disable Wind Noise]
+comment=Disables wind noise
 author=TheAdmiester
 
 // Pretend we're in the incorrect draw mode for turbulence to be calculated in Automobile::getTurbulence
