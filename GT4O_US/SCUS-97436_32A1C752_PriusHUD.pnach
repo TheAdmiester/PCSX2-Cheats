@@ -4,7 +4,7 @@ comment=Forces the game to load the Toyota Prius speed/fuel economy HUD without 
 author=TheAdmiester
 
 // Change beq,v0,zero,0x001C7790 to bne,zero,zero,0x001C7790
-// This checked pre-race or when the camera is changed
+// This is checked pre-race or when the camera is changed
 patch=1,EE,201C777C,extended,14000004
 
 // Unsure of what this is checking, but stopping it from branching selects average MPG for display instead of live
