@@ -1,0 +1,10 @@
+gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
+[Increase B-Spec Speed Multipliter]
+comment=Allow B-Spec's speedup mode to go to 16x
+author=TheAdmiester (original GT4 NTSC from Vyerq)
+
+// Change limiter check from 3 to 16
+patch=1,EE,201F2D0C,extended,28420010 
+
+// Change override value from 3 to 16 if somehow over limiter
+patch=1,EE,201F2D14,extended,24020010
