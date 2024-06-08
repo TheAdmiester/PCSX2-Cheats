@@ -1,0 +1,16 @@
+gametitle=Gran Turismo 4 [SCUS-97328] (U)
+[Toggle Car Lights]
+comment=Press L3+Up/L3+Down to switch lights on/off
+author=TheAdmiester (Original by Vyerq)
+
+patch=1,EE,D086F99C,extended,0200FFED 
+// This is a call to GT4Model::CarModel::setTimeZone inside RaceCarModel::update
+// Instead of passing in the car's "day/night mode" as a parameter, we pass in a hardcoded 1 or 0 depending on toggle
+patch=1,EE,20390DA8,extended,24050001
+// Similar here, except the same check is being run in RaceCarModel::setLampFlare to draw the actual lens flares from the lights
+patch=1,EE,2039120C,extended,24020001
+
+patch=1,EE,D086F99C,extended,0200FFBD 
+patch=1,EE,20390DA8,extended,24050000
+patch=1,EE,2039120C,extended,24020000
+
