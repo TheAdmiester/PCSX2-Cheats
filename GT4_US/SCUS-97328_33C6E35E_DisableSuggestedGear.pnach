@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 [SCUS-97328] (U)
+[Disable Suggested Gear]
+comment=Hides the suggested gear indicator from all views
+author=TheAdmiester
+
+// Skip a call to RaceSuggestedGearDisplay::render_main
+// Change beq v0,zero,0x003A7A20 to beq zero,zero,0x003A7A20
+patch=1,EE,203A7A10,extended,10000003

@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 Online Public Beta [SCUS-97436] (U)
+[Disable Suggested Gear]
+comment=Hides the suggested gear indicator from all views
+author=TheAdmiester
+
+// Skip a call to RaceSuggestedGearDisplay::render_main
+// Change beq v0,zero,0x001CD6E0 to beq zero,zero,0x001CD6E0
+patch=1,EE,201CD6D0,extended,10000003
