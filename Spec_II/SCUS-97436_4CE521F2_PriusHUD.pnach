@@ -1,0 +1,15 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436]
+[Toyota Prius HUD for All Cars]
+comment=Forces the game to load the Toyota Prius speed/fuel economy HUD without the hybrid display
+author=TheAdmiester
+
+// Change beq,v0,zero,0x001C7790 to bne,zero,zero,0x001C7790
+// This is checked pre-race or when the camera is changed
+patch=1,EE,201C777C,extended,14000004
+
+// Unsure of what this is checking, but stopping it from branching selects average MPG for display instead of live
+// Change beq v1,zero,0x0022C880 to bne zero,zero,0x0022C880
+patch=1,EE,2022C870,extended,14000004
+
+// Uncomment this to switch back to live - checked constantly during the race so no restart needed
+//patch=1,EE,2022C870,extended,10600003

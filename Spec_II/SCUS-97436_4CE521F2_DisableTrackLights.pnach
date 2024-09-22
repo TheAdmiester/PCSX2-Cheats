@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436]
+[Disable Track Lights Lens Flares]
+comment=Disables the lens flares that appear on light sources on evening/night tracks. Useful for PCSX2 performance.
+author=TheAdmiester
+
+// Return early from CourseData::setFlare
+patch=1,EE,2029D590,extended,03E00008
+patch=1,EE,2029D594,extended,00000000

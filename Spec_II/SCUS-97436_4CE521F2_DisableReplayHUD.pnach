@@ -1,0 +1,10 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436]
+[Disable Replay HUD]
+comment=Hide replay song, GT logo, fast forward indicator, etc.
+author=TheAdmiester
+
+// NOP the call to RaceMusicDisplay::update inside RaceDisplay::update
+patch=1,EE,201C44C8,extended,00000000
+
+// Skip the branch in RaceDisplay::update that runs when replay mode is active
+patch=1,EE,201C443C,extended,08071130

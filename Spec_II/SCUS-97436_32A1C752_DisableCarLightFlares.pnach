@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436]
+[Disable Car Lights Lens Flares]
+comment=Disables the lens flares that from all cars' brake/headlights. Useful for PCSX2 performance.
+author=TheAdmiester
+
+// Return early from RaceCarModel::setLampFlare
+patch=1,EE,201BF650,extended,03E00008
+patch=1,EE,201BF654,extended,00000000
