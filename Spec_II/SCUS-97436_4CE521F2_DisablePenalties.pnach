@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436] (U)
+[Disable Penalties]
+comment=Remove penalties from missions and special condition events
+author=TheAdmiester
+
+// Return early from AutomobileGetCrashPenalty
+patch=1,EE,20223300,extended,03E00008
+patch=1,EE,20223304,extended,00000000
