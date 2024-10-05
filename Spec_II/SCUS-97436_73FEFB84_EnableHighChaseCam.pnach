@@ -4,7 +4,7 @@ comment=Add the high chase camera from GT4 Prologue
 author=TheAdmiester
 
 // Edit each check of usingRaisedCam to pass (beq v0,zero changed to bne v0,v0)
-patch=1,EE,2068AD38,extended,14420007
-patch=1,EE,2068ADE0,extended,14420007
-patch=1,EE,2068AE5C,extended,14420007
-patch=1,EE,2068AEAC,extended,14420007
+patch=1,EE,68AEB8,extended,1442000A
+patch=1,EE,68AF90,extended,1442000A
+patch=1,EE,68B030,extended,1442000A
+patch=1,EE,68B08C,extended,1442000A
