@@ -1,0 +1,8 @@
+gametitle=Gran Turismo 4 [SCES-51719]
+[Disable Sun Lens Flare]
+comment=Disables the lens flare that appears on some tracks when facing the sun. Useful for PCSX2 performance.
+author=TheAdmiester
+
+// Return early from CourseEnvPtr::setSun
+patch=1,EE,20398898,extended,03E00008
+patch=1,EE,2039889C,extended,00000000
