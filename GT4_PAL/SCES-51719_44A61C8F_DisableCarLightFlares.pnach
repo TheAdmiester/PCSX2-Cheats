@@ -4,5 +4,5 @@ comment=Disables the lens flares cast from all cars' brake/headlights. Useful fo
 author=TheAdmiester
 
 // Return early from RaceCarModel::setLampFlare
-patch=1,EE,203428C0,extended,03E00008
-patch=1,EE,209428C4,extended,00000000
+patch=1,EE,203914C8,extended,03E00008
+patch=1,EE,203914CC,extended,00000000
