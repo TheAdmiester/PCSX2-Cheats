@@ -4,4 +4,4 @@ comment=Removes the requirement for specific tires in all events.
 author=TheAdmiester (Original by Code Master)
 
 // Set value in adhoc getNeedTire to always match
-patch=1,EE,201E2A8,extended,24050000
+patch=1,EE,2018E2A8,extended,24050000
