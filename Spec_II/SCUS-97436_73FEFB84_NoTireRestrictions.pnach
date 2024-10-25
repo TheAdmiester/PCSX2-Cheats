@@ -1,0 +1,7 @@
+gametitle=Gran Turismo 4 Spec II [SCUS-97436]
+[No Tire Restrictions]
+comment=Removes the requirement for specific tires in all events.
+author=TheAdmiester (Original by Code Master)
+
+// Set value in adhoc getNeedTire to always match
+patch=1,EE,201E2A8,extended,24050000
