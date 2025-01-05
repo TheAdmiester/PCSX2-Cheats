@@ -1,0 +1,30 @@
+gametitle=Enthusia Professional Racing
+[Lower Tier Point Adjustment]
+comment=When the player is at RS or RI rank, all lower-tier events will be worth 200 base points to match RI
+author=TheAdmiester
+
+// Jump from "CalculateMaxTier" to unused CarDebug function, holding onto the value (v0) it was about to return (0-5 to represent tiers)
+patch=0,EE,2016E9B4,extended,080632B6
+
+// Overwrite CarDebug with our own function that checks if the value held is less than 2, then overwrites the base points table (or reverts to standard if not)
+patch=0,EE,2018CAD8,extended,244F0000
+patch=0,EE,2018CADC,extended,3C0E0047
+patch=0,EE,2018CAE0,extended,35CEA6D0
+patch=0,EE,2018CAE4,extended,240D0002
+patch=0,EE,2018CAE8,extended,01ED602A
+patch=0,EE,2018CAEC,extended,11800006
+patch=0,EE,2018CAF0,extended,240B00C8
+patch=0,EE,2018CAF4,extended,ADCB0008
+patch=0,EE,2018CAF8,extended,ADCB000C
+patch=0,EE,2018CAFC,extended,ADCB0010
+patch=0,EE,2018CB00,extended,ADCB0014
+patch=0,EE,2018CB04,extended,03E00008
+patch=0,EE,2018CB08,extended,240B0064
+patch=0,EE,2018CB0C,extended,ADCB0008
+patch=0,EE,2018CB10,extended,240B0032
+patch=0,EE,2018CB14,extended,ADCB000C
+patch=0,EE,2018CB18,extended,240B0014
+patch=0,EE,2018CB1C,extended,ADCB0010
+patch=0,EE,2018CB20,extended,240B000A
+patch=0,EE,2018CB24,extended,ADCB0014
+patch=0,EE,2018CB28,extended,03E00008
