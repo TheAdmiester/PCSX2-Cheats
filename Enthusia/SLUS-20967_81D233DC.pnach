@@ -1,0 +1,7 @@
+gametitle=Enthusia Professional Racing
+[Change Cars Without Skipping Time]
+author=TheAdmiester
+
+// Edits a branch checking the "day change type" - 0 is race finish, 1 is car change, 2 is rest
+// Change the check for 1 to -1 so that it never runs
+patch=1,EE,2016D420,extended,2411FFFF
