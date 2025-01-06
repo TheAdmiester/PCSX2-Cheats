@@ -1,0 +1,9 @@
+gametitle=Enthusia Professional Racing
+[Enable Metric Units]
+author=TheAdmiester
+
+// Uncomment one line based on preference - default for this cheat is metric with PS/Nm units
+// patch=1,EE,20377D44,extended,0 // Japanese car names, metric distances, PS/kgm power/torque
+// patch=1,EE,20377D44,extended,1 // Vanilla NTSC, imperial distances, HP/lb-ft power/torque
+patch=1,EE,20377D44,extended,2 // Metric distances, PS/Nm power/torque
+// patch=1,EE,20377D44,extended,3 // Metric distances, kW/Nm power/torque
