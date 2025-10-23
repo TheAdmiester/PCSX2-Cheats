@@ -1,0 +1,34 @@
+gametitle=Enthusia Professional Racing
+[Increased FOV]
+comment=Increases FOV of bumper cam and chase cam from the default 62 to 80. Uncomment different lines for different values.
+author=TheAdmiester
+
+// NOTE: Only uncomment (// symbol) one patch per camera to avoid conflicts!
+
+// ---- Bumper Camera ----
+// -- 90 FOV
+//patch=1,EE,2037F1C0,extended,42B40000
+
+// -- 80 FOV
+//patch=1,EE,2037F1C0,extended,42A00000
+
+// -- 70 FOV - default for this patch
+patch=1,EE,2037F1C0,extended,428C0000
+
+// -- 60 FOV
+//patch=1,EE,2037F1C0,extended,42700000
+
+
+
+// ---- Chase Camera ----
+// -- 90 FOV
+//patch=1,EE,2037F130,extended,42B40000
+
+// -- 80 FOV
+//patch=1,EE,2037F130,extended,42A00000
+
+// -- 70 FOV - default for this patch
+patch=1,EE,2037F130,extended,428C0000
+
+// -- 60 FOV
+//patch=1,EE,2037F130,extended,42700000

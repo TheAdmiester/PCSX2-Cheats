@@ -1,0 +1,24 @@
+gametitle=Enthusia Professional Racing
+[Increased Chase Cam Distance]
+comment=Increases chase cam distance from -3.1 to -3.5. Uncomment different lines for different values.
+author=TheAdmiester
+
+// NOTE: Only uncomment (// symbol) one patch to avoid conflicts!
+
+// -- -4.5
+//patch=1,EE,2037F118,extended,C0900000
+
+// -- -4.0
+//patch=1,EE,2037F118,extended,C0600000
+
+// -- -3.5 - default for this patch
+patch=1,EE,2037F118,extended,C0600000
+
+// -- -3.1 - game default
+//patch=1,EE,2037F118,extended,C0466666
+
+// -- -3.0
+//patch=1,EE,2037F118,extended,C0400000
+
+// -- -2.5
+//patch=1,EE,2037F118,extended,C0200000
